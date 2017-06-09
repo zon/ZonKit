@@ -22,6 +22,7 @@
 		ECEF6D271EEAF72A00022058 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEF6D261EEAF72A00022058 /* UIViewControllerExtension.swift */; };
 		ECEF6D291EEAF73100022058 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEF6D281EEAF73100022058 /* UIViewExtension.swift */; };
 		ECEF6D2B1EEAF78900022058 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEF6D2A1EEAF78900022058 /* ProgressController.swift */; };
+		ECEF6D2D1EEB15AA00022058 /* AlamofireDataRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEF6D2C1EEB15AA00022058 /* AlamofireDataRequestExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		ECEF6D261EEAF72A00022058 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		ECEF6D281EEAF73100022058 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		ECEF6D2A1EEAF78900022058 /* ProgressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
+		ECEF6D2C1EEB15AA00022058 /* AlamofireDataRequestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireDataRequestExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				ECBEE98E1EEAF23E0096FC1C /* ZonKit.h */,
 				ECBEE98F1EEAF23E0096FC1C /* Info.plist */,
+				ECEF6D2C1EEB15AA00022058 /* AlamofireDataRequestExtension.swift */,
 				ECBEE9A51EEAF2D70096FC1C /* AlertController.swift */,
 				ECEF6D1A1EEAF5D900022058 /* DocProtocol.swift */,
 				ECEF6D1C1EEAF5FC00022058 /* DocResponseError.swift */,
@@ -353,6 +356,7 @@
 				ECEF6D221EEAF69B00022058 /* Format.swift in Sources */,
 				ECEF6D291EEAF73100022058 /* UIViewExtension.swift in Sources */,
 				ECEF6D1D1EEAF5FC00022058 /* DocResponseError.swift in Sources */,
+				ECEF6D2D1EEB15AA00022058 /* AlamofireDataRequestExtension.swift in Sources */,
 				ECBEE9A61EEAF2D70096FC1C /* AlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

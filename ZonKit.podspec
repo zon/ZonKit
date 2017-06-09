@@ -135,6 +135,10 @@ Tools for async REST JSON requests. A generic full screen progress indicator and
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
+  s.dependency "PromiseKit", "~> 4.2"
+  s.dependency "Alamofire", "~> 4.4"
+  s.dependency "SwiftyJSON", "~> 3.1"
+
   # s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
 
 end
