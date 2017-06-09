@@ -2,7 +2,7 @@ import Foundation
 import SwiftyJSON
 import CoreLocation
 
-extension JSON {
+public extension JSON {
     
     var date: Date? {
         get {

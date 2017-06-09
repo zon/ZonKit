@@ -3,7 +3,7 @@ import Alamofire
 import SwiftyJSON
 import PromiseKit
 
-extension DataRequest {
+public extension DataRequest {
     
     func promiseJSON<S: Sequence>(statusCode: S) -> Promise<JSON> where S.Iterator.Element == Int {
         log()

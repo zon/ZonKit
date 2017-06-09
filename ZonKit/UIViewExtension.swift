@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-extension UIView {
+public extension UIView {
     
     @discardableResult
     func addBorder(width: CGFloat, color: UIColor, visible: BorderVisible, radius: CGFloat = 0) -> CALayer {
@@ -81,7 +81,7 @@ extension UIView {
     
 }
 
-struct BorderVisible {
+public struct BorderVisible {
     let top: Bool
     let left: Bool
     let bottom: Bool

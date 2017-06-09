@@ -2,7 +2,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class Http {
+public class Http {
     
     static let contentType = "application/json"
     

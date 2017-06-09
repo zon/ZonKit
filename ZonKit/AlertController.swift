@@ -3,7 +3,7 @@ import UIKit
 import PromiseKit
 import Alamofire
 
-class AlertController : UIAlertController {
+public class AlertController : UIAlertController {
     var window: UIWindow?
     
     static var current: AlertController?
@@ -43,7 +43,7 @@ class AlertController : UIAlertController {
         }
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    override public func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         window?.isHidden = true
         window = nil

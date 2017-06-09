@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import PromiseKit
 
-extension UIViewController {
+public extension UIViewController {
     
     func progress<T>(_ promise: Promise<T>) {
         ProgressController.show()

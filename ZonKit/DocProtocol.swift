@@ -1,7 +1,7 @@
 import Foundation
 import SwiftyJSON
 
-protocol DocProtocol {
+public protocol DocProtocol {
     
     init?(json: JSON)
     

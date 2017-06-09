@@ -1,6 +1,6 @@
 import Foundation
 
-class Format {
+public class Format {
     
     private static var _jsonDate: DateFormatter?
     

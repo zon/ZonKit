@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class ProgressController : UIViewController {
+public class ProgressController : UIViewController {
     
     private static var current: ProgressController?
     private static var window: UIWindow?
@@ -25,7 +25,7 @@ class ProgressController : UIViewController {
         current = nil
     }
     
-    override func loadView() {
+    override public func loadView() {
         let background = UIView(frame: UIScreen.main.bounds)
         
         let activity = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
