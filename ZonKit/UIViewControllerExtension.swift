@@ -16,4 +16,8 @@ public extension UIViewController {
         return String(cString: name, encoding: .utf8)
     }
     
+    func present(_ viewControllerToPresent: UIViewController) {
+        present(viewControllerToPresent, animated: true, completion: nil)
+    }
+    
 }
