@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZonKit"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "Boilerplate classes I use in my projects."
 
   # This description is used to generate tags and improve search results.
