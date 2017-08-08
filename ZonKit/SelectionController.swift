@@ -5,6 +5,8 @@ public class SelectionController : UIViewController, UICollectionViewDataSource,
     public let options: [String]
     public let layout = SelectionLayout()
     
+    public var cellIdentifier = SelectionCell.identifier
+    
     private var onSelect: ((Int) -> Void)?
     
     public var collection: UICollectionView {
@@ -41,6 +43,8 @@ public class SelectionController : UIViewController, UICollectionViewDataSource,
         collection.register(SelectionCell.self, forCellWithReuseIdentifier: SelectionCell.identifier)
         collection.dataSource = self
         collection.delegate = self
+        
+        layout.bgClose.addTarget(self, action: #selector(close), for: .touchUpInside)
     }
     
     override public func viewWillAppear(_ animated: Bool) {
@@ -52,15 +56,22 @@ public class SelectionController : UIViewController, UICollectionViewDataSource,
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let height = collectionView.frame.height
-        let inset = (height - SelectionCell.height * CGFloat(options.count)) / 2
-        return UIEdgeInsets(top: inset, left: 0, bottom: inset, right: 0)
+        let height = collectionView.frame.height - collectionView.contentInset.top - collectionView.contentInset.bottom
+        let cellHeight = (collectionView.collectionViewLayout as! UICollectionViewFlowLayout).itemSize.height
+        let inset = (height - cellHeight * CGFloat(options.count)) / 2
+        if inset > 0 {
+            return UIEdgeInsets(top: inset, left: 0, bottom: inset, right: 0)
+        } else {
+            return UIEdgeInsets.zero
+        }
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let option = options[indexPath.item]
-        let cell = layout.collection.dequeueReusableCell(withReuseIdentifier: SelectionCell.identifier, for: indexPath as IndexPath) as! SelectionCell
-        cell.update(label: option, index: indexPath.item, count: options.count)
+        let cell = layout.collection.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath as IndexPath)
+        if let scell = cell as? SelectionCellProtocol {
+            scell.update(label: option, index: indexPath.item, count: options.count)
+        }
         return cell
     }
     

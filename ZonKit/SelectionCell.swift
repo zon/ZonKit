@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-public class SelectionCell : UICollectionViewCell {
+public class SelectionCell : UICollectionViewCell, SelectionCellProtocol {
     public let label: UILabel
     public let background: CALayer
     public var border: CALayer! = nil

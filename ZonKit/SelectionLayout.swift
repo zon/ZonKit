@@ -2,11 +2,14 @@ import Foundation
 import UIKit
 
 public class SelectionLayout : UIView {
+    public let bgClose: UIButton
     public let collection: UICollectionView
     
     required public init() {
         let frame = UIScreen.main.bounds
         let status = UIApplication.shared.statusBarFrame.height
+        
+        bgClose = UIButton(frame: CGRect(x: 0, y: 0, size: frame.size))
         
         let margin = CGFloat(20)
         let width = frame.width - margin * 2
@@ -17,17 +20,14 @@ public class SelectionLayout : UIView {
         layout.scrollDirection = .vertical
         layout.itemSize = CGSize(width: width, height: SelectionCell.height)
         
-        collection = UICollectionView(frame: CGRect(
-            x: margin,
-            y: status + margin,
-            width: width,
-            height: frame.height - status - margin * 2
-        ), collectionViewLayout: layout)
+        collection = UICollectionView(frame: CGRect(x: 0, y: 0, size: frame.size), collectionViewLayout: layout)
+        collection.contentInset = UIEdgeInsets(top: status + margin, left: margin, bottom: margin, right: margin)
         collection.backgroundColor = UIColor.clear
         
         super.init(frame: frame)
         backgroundColor = UIColor(white: 0, alpha: 0.2)
         
+        addSubview(bgClose)
         addSubview(collection)
     }
     
