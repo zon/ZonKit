@@ -16,3 +16,10 @@ public extension CGRect {
     }
     
 }
+
+public func * (left: CGRect, right: CGFloat) -> CGRect {
+    return CGRect(
+        origin: left.origin * right,
+        size: left.size * right
+    )
+}

@@ -6,7 +6,7 @@ public class ProgressController : UIViewController {
     private static var current: ProgressController?
     private static var window: UIWindow?
     
-    static func show() {
+    public static func show() {
         if current == nil {
             current = ProgressController()
             
@@ -19,7 +19,7 @@ public class ProgressController : UIViewController {
         }
     }
     
-    static func hide() {
+    public static func hide() {
         window?.isHidden = true
         window = nil
         current = nil

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B4E60FD8E5D0A5309AFB70AC /* Pods_ZonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6E9E34B0DA8D2D74142D45 /* Pods_ZonKit.framework */; };
 		E4873174021B190B2689FCE2 /* Pods_ZonKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B09EA3BF217EA477E9DAFC2 /* Pods_ZonKitTests.framework */; };
+		EC1770A01F3A37D300A05447 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17709F1F3A37D300A05447 /* CGPointExtension.swift */; };
+		EC1770A21F3A37EB00A05447 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1770A11F3A37EB00A05447 /* CGSizeExtension.swift */; };
 		EC7DAA911EF0907B006A1542 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DAA901EF0907B006A1542 /* ArrayExtension.swift */; };
 		EC7DAA951EF18FAA006A1542 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DAA921EF18FAA006A1542 /* SelectionCell.swift */; };
 		EC7DAA961EF18FAA006A1542 /* SelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DAA931EF18FAA006A1542 /* SelectionController.swift */; };
@@ -47,6 +49,8 @@
 		8AA90024BF3B5FD722A16B77 /* Pods-ZonKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZonKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZonKit/Pods-ZonKit.debug.xcconfig"; sourceTree = "<group>"; };
 		D9A9C5E474CB59E4EE6169C7 /* Pods-ZonKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZonKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZonKitTests/Pods-ZonKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1CF399581E39416D213424B /* Pods-ZonKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZonKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZonKitTests/Pods-ZonKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC17709F1F3A37D300A05447 /* CGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
+		EC1770A11F3A37EB00A05447 /* CGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
 		EC7DAA901EF0907B006A1542 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		EC7DAA921EF18FAA006A1542 /* SelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
 		EC7DAA931EF18FAA006A1542 /* SelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionController.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 				ECEF6D2C1EEB15AA00022058 /* AlamofireDataRequestExtension.swift */,
 				ECEF6D261EEAF72A00022058 /* UIViewControllerExtension.swift */,
 				ECEF6D281EEAF73100022058 /* UIViewExtension.swift */,
+				EC17709F1F3A37D300A05447 /* CGPointExtension.swift */,
+				EC1770A11F3A37EB00A05447 /* CGSizeExtension.swift */,
 				ECEF6D481EEEE1B000022058 /* CGRectExtension.swift */,
 				EC7DAA901EF0907B006A1542 /* ArrayExtension.swift */,
 			);
@@ -388,6 +394,7 @@
 			files = (
 				ECEF6D2B1EEAF78900022058 /* ProgressController.swift in Sources */,
 				ECEF6D1B1EEAF5D900022058 /* DocProtocol.swift in Sources */,
+				EC1770A21F3A37EB00A05447 /* CGSizeExtension.swift in Sources */,
 				EC7DAA961EF18FAA006A1542 /* SelectionController.swift in Sources */,
 				EC7DAA951EF18FAA006A1542 /* SelectionCell.swift in Sources */,
 				EC7DAA971EF18FAA006A1542 /* SelectionLayout.swift in Sources */,
@@ -396,6 +403,7 @@
 				ECEF6D251EEAF6EB00022058 /* TextField.swift in Sources */,
 				ECEF6D271EEAF72A00022058 /* UIViewControllerExtension.swift in Sources */,
 				ECEF6D221EEAF69B00022058 /* Format.swift in Sources */,
+				EC1770A01F3A37D300A05447 /* CGPointExtension.swift in Sources */,
 				ECEF6D291EEAF73100022058 /* UIViewExtension.swift in Sources */,
 				ECEF6D1D1EEAF5FC00022058 /* DocResponseError.swift in Sources */,
 				ECEF6D491EEEE1B000022058 /* CGRectExtension.swift in Sources */,

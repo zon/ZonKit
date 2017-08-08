@@ -8,7 +8,7 @@ public class AlertController : UIAlertController {
     
     static var current: AlertController?
     
-    static func show(message: String = "Something went wrong.", title: String? = "Error") {
+    public static func show(message: String = "Something went wrong.", title: String? = "Error") {
         if current == nil {
             let alert = AlertController(title: title, message: message, preferredStyle: .alert)
             let ok = UIAlertAction(title: "OK", style: .default) { (_) in }
@@ -18,7 +18,7 @@ public class AlertController : UIAlertController {
         }
     }
     
-    static func show(error: Error, title: String? = "Error") {
+    public static func show(error: Error, title: String? = "Error") {
         switch error {
             
         case DocResponseError.noJSON(let response):
