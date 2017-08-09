@@ -82,14 +82,14 @@ public extension UIView {
 }
 
 public struct BorderVisible {
-    let top: Bool
-    let left: Bool
-    let bottom: Bool
-    let right: Bool
+    public let top: Bool
+    public let left: Bool
+    public let bottom: Bool
+    public let right: Bool
     
-    static let yes = BorderVisible(top: true, left: true, bottom: true, right: true)
+    public static let yes = BorderVisible(top: true, left: true, bottom: true, right: true)
     
-    init(top: Bool = false, left: Bool = false, bottom: Bool = false, right: Bool = false) {
+    public init(top: Bool = false, left: Bool = false, bottom: Bool = false, right: Bool = false) {
         self.top = top
         self.left = left
         self.bottom = bottom
