@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4E60FD8E5D0A5309AFB70AC /* Pods_ZonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6E9E34B0DA8D2D74142D45 /* Pods_ZonKit.framework */; };
 		E4873174021B190B2689FCE2 /* Pods_ZonKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B09EA3BF217EA477E9DAFC2 /* Pods_ZonKitTests.framework */; };
 		EC1770A01F3A37D300A05447 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17709F1F3A37D300A05447 /* CGPointExtension.swift */; };
 		EC1770A21F3A37EB00A05447 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1770A11F3A37EB00A05447 /* CGSizeExtension.swift */; };
@@ -16,6 +15,9 @@
 		EC7DAA961EF18FAA006A1542 /* SelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DAA931EF18FAA006A1542 /* SelectionController.swift */; };
 		EC7DAA971EF18FAA006A1542 /* SelectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DAA941EF18FAA006A1542 /* SelectionLayout.swift */; };
 		EC8DB8D81F3A501200A93C11 /* SelectionCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8DB8D71F3A501200A93C11 /* SelectionCellProtocol.swift */; };
+		ECA73BCD1FA271AB00FFA2E8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA73BCE1FA271AB00FFA2E8 /* Alamofire.framework */; };
+		ECA73BCF1FA271BB00FFA2E8 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA73BD01FA271BB00FFA2E8 /* PromiseKit.framework */; };
+		ECA73BD11FA271BE00FFA2E8 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA73BD21FA271BE00FFA2E8 /* SwiftyJSON.framework */; };
 		ECBEE9951EEAF23E0096FC1C /* ZonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBEE98B1EEAF23E0096FC1C /* ZonKit.framework */; };
 		ECBEE99A1EEAF23E0096FC1C /* ZonKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBEE9991EEAF23E0096FC1C /* ZonKitTests.swift */; };
 		ECBEE99C1EEAF23E0096FC1C /* ZonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ECBEE98E1EEAF23E0096FC1C /* ZonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -57,6 +59,9 @@
 		EC7DAA931EF18FAA006A1542 /* SelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionController.swift; sourceTree = "<group>"; };
 		EC7DAA941EF18FAA006A1542 /* SelectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionLayout.swift; sourceTree = "<group>"; };
 		EC8DB8D71F3A501200A93C11 /* SelectionCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionCellProtocol.swift; sourceTree = "<group>"; };
+		ECA73BCE1FA271AB00FFA2E8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA73BD01FA271BB00FFA2E8 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA73BD21FA271BE00FFA2E8 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBEE98B1EEAF23E0096FC1C /* ZonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBEE98E1EEAF23E0096FC1C /* ZonKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZonKit.h; sourceTree = "<group>"; };
 		ECBEE98F1EEAF23E0096FC1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4E60FD8E5D0A5309AFB70AC /* Pods_ZonKit.framework in Frameworks */,
+				ECA73BCF1FA271BB00FFA2E8 /* PromiseKit.framework in Frameworks */,
+				ECA73BD11FA271BE00FFA2E8 /* SwiftyJSON.framework in Frameworks */,
+				ECA73BCD1FA271AB00FFA2E8 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				6E6E9E34B0DA8D2D74142D45 /* Pods_ZonKit.framework */,
+				ECA73BCE1FA271AB00FFA2E8 /* Alamofire.framework */,
+				ECA73BD01FA271BB00FFA2E8 /* PromiseKit.framework */,
+				ECA73BD21FA271BE00FFA2E8 /* SwiftyJSON.framework */,
 				7B09EA3BF217EA477E9DAFC2 /* Pods_ZonKitTests.framework */,
 			);
 			name = Frameworks;
