@@ -6,7 +6,6 @@ target 'ZonKit' do
   pod 'PromiseKit', '~> 4.4'
   pod 'Alamofire', '~> 4.5'
   pod 'SwiftyJSON', '~> 3.1'
-  pod 'HanekeSwift'
 
   target 'ZonKitTests' do
     inherit! :search_paths

@@ -11,7 +11,6 @@
 		E4873174021B190B2689FCE2 /* Pods_ZonKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B09EA3BF217EA477E9DAFC2 /* Pods_ZonKitTests.framework */; };
 		EC1770A01F3A37D300A05447 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17709F1F3A37D300A05447 /* CGPointExtension.swift */; };
 		EC1770A21F3A37EB00A05447 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1770A11F3A37EB00A05447 /* CGSizeExtension.swift */; };
-		EC1770A41F3A3FEC00A05447 /* HanekeFetchExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1770A31F3A3FEC00A05447 /* HanekeFetchExtension.swift */; };
 		EC7DAA911EF0907B006A1542 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DAA901EF0907B006A1542 /* ArrayExtension.swift */; };
 		EC7DAA951EF18FAA006A1542 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DAA921EF18FAA006A1542 /* SelectionCell.swift */; };
 		EC7DAA961EF18FAA006A1542 /* SelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7DAA931EF18FAA006A1542 /* SelectionController.swift */; };
@@ -53,7 +52,6 @@
 		E1CF399581E39416D213424B /* Pods-ZonKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZonKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZonKitTests/Pods-ZonKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC17709F1F3A37D300A05447 /* CGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 		EC1770A11F3A37EB00A05447 /* CGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
-		EC1770A31F3A3FEC00A05447 /* HanekeFetchExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HanekeFetchExtension.swift; sourceTree = "<group>"; };
 		EC7DAA901EF0907B006A1542 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		EC7DAA921EF18FAA006A1542 /* SelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
 		EC7DAA931EF18FAA006A1542 /* SelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionController.swift; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 				EC1770A11F3A37EB00A05447 /* CGSizeExtension.swift */,
 				ECEF6D481EEEE1B000022058 /* CGRectExtension.swift */,
 				EC7DAA901EF0907B006A1542 /* ArrayExtension.swift */,
-				EC1770A31F3A3FEC00A05447 /* HanekeFetchExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -324,14 +321,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZonKitTests/Pods-ZonKitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/HanekeSwift/Haneke.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haneke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -418,7 +413,6 @@
 				EC1770A21F3A37EB00A05447 /* CGSizeExtension.swift in Sources */,
 				EC7DAA961EF18FAA006A1542 /* SelectionController.swift in Sources */,
 				EC7DAA951EF18FAA006A1542 /* SelectionCell.swift in Sources */,
-				EC1770A41F3A3FEC00A05447 /* HanekeFetchExtension.swift in Sources */,
 				EC7DAA971EF18FAA006A1542 /* SelectionLayout.swift in Sources */,
 				ECEF6D231EEAF69B00022058 /* JSONExtension.swift in Sources */,
 				ECEF6D1F1EEAF66400022058 /* Http.swift in Sources */,
