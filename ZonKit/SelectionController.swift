@@ -30,6 +30,7 @@ public class SelectionController : UIViewController, UICollectionViewDataSource,
         layout.open()
     }
     
+    @objc
     public func close() {
         layout.close() {
             self.view.removeFromSuperview()

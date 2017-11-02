@@ -75,6 +75,7 @@ public extension UIView {
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(UIView.dismissKeyboard)))
     }
     
+    @objc
     func dismissKeyboard() {
         endEditing(true)
     }
