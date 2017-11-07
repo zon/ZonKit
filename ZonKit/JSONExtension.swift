@@ -4,7 +4,7 @@ import CoreLocation
 
 public extension JSON {
     
-    var date: Date? {
+    public var date: Date? {
         get {
             if let str = string {
                 return Format.jsonDate.date(from: str)
